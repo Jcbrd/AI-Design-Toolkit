@@ -5,12 +5,24 @@ A Claude skill that generates framework-anchored project roadmaps for product de
 
 ## The problem
 
-Every design kickoff feels like starting from zero. You're choosing tools, picking a workflow, figuring out what you even need — before you've done any real work. This skill skips the blank-page problem and gives you a living tracker instead of a flowchart you'll screenshot once.
+Designers are grappling with how the design process has changed with the emergence of AI. Traditional UX phases no longer map cleanly to modern product development, and there’s growing ambiguity around which tools, workflows, and methods actually make sense in AI-native work.
+
+Design projects now start with a moving target. Designers are figuring out not just what to make, but how to work inside a landscape shaped by generative tools, agents, rapid prototyping, and AI-assisted research.
 
 
 ## What it does
 
-Describe your project in a sentence. Answer a few onboarding questions. Get a living HTML tracker with stages, sub-tasks, tool recommendations per stage, and framework attribution (PAIR, JTBD, Lean UX, HAX, StoryBrand). When a stage hits 100%, it asks what you actually shipped — not just that you ticked the boxes.
+Describe your project, answer a few onboarding questions about your experience and willingness to learn new tools, and the skill generates a personalized AI-native project roadmap tailored to the way modern design work actually happens.
+
+The output is a living HTML tracker with:
+
+adaptive project stages and sub-tasks
+AI tool recommendations matched to your workflow and skill level
+framework grounding (PAIR, JTBD, Lean UX, HAX, StoryBrand)
+progress tracking across stages
+end-of-stage prompts focused on what you actually shipped, not just what you completed
+
+Rather than giving you a static process diagram, it helps you develop a workflow that evolves alongside the tools and practices shaping modern product design.
 
 
 ## Things worth knowing
