@@ -16,15 +16,15 @@ Describe your project, answer a few onboarding questions about your experience a
 
 The output is a living HTML tracker with:
 
-adaptive project stages and sub-tasks
+- adaptive project stages and sub-tasks
 
-AI tool recommendations matched to your workflow and skill level
+- AI tool recommendations matched to your workflow and skill level
 
-framework grounding (PAIR, JTBD, Lean UX, HAX, StoryBrand)
+- framework grounding (PAIR, JTBD, Lean UX, HAX, StoryBrand)
 
-progress tracking across stages
+- progress tracking across stages
 
-end-of-stage prompts focused on what you actually shipped, not just what you completed
+- end-of-stage prompts focused on what you actually shipped, not just what you completed
 
 Rather than giving you a static process diagram, it helps you develop a workflow that evolves alongside the tools and practices shaping modern product design.
 
