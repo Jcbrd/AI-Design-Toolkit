@@ -1,101 +1,101 @@
-# Marketing site project flow
+# Mobile / native app project flow
  
 ## Framework anchors
  
-- **CRO methodology** (Conversion Rate Optimization) — https://cxl.com/conversion-optimization/ — A data-driven approach to designing pages that convert: research → hypothesis → test → iterate.
-- **StoryBrand BrandScript** (Donald Miller) — https://storybrand.com/ — A narrative framework that positions the customer as the hero and the brand as the guide, organizing site copy around a 7-part story structure.
+- **Apple Human Interface Guidelines (HIG)** — https://developer.apple.com/design/human-interface-guidelines — Apple's canonical guidance on native iOS/iPadOS design, covering navigation, gestures, modality, platform conventions.
+- **Double Diamond** (Design Council, UK) — https://www.designcouncil.org.uk/our-resources/the-double-diamond — A four-phase framework (Discover → Define → Develop → Deliver) widely used as the backbone of design process.
+For Android-first or cross-platform projects, also reference Material Design 3 (https://m3.material.io/).
+ 
 ## Canonical step sequence (standard build, 5 steps)
  
-### Step 1: Define audience + offer
-- **Goal:** Pin down exactly who the page is for and what you're asking them to do.
-- **What happens:** Identify the ideal customer profile (ICP). Write the one-sentence value proposition. Build a StoryBrand BrandScript (hero, problem, guide, plan, action, success, failure).
-- **Default tools:** Claude (BrandScript drafting, ICP synthesis), Notion (audience + offer doc).
-- **Default time:** 2-4 days standard · 1 day quick · 4-6 days full launch.
-- **Deliverable:** A one-page strategy doc with ICP, value prop, BrandScript, and the primary conversion goal.
-- **Framework attribution:** StoryBrand BrandScript framework · CRO research phase.
+### Step 1: Discover the user
+- **Goal:** Build empathy and align on the user's actual job.
+- **What happens:** Conduct user interviews, synthesize themes, write personas or JTBD statements, identify the core problem the app solves.
+- **Default tools:** Claude (synthesis), Dovetail (transcripts/analysis), Notion (writeups).
+- **Default time:** 3-5 days standard · 1-2 days quick · 7-10 days full launch.
+- **Deliverable:** Short research synthesis with personas or JTBD statements and a one-line problem statement.
+- **Framework attribution:** Discover phase of Double Diamond · HIG: "Designing a Great App" intro guidance.
 - **Sub-tasks:**
-  - Define the ICP (1-2 segments max)
-  - Write the value proposition (under 12 words)
-  - Complete the StoryBrand 7-part BrandScript
-  - Identify the single primary conversion goal
-  - Stakeholder sign-off before designing
-### Step 2: Build the message hierarchy
-- **Goal:** Translate the strategy into a section-by-section content outline.
-- **What happens:** Outline the page sections from hero down to footer. Decide what message each section delivers and what action it asks for. Draft headlines and CTAs first.
-- **Default tools:** Claude (headline drafting), FigJam (section sketching).
-- **Default time:** 2-3 days standard · 1 day quick · 3-5 days full launch.
-- **Deliverable:** An annotated content outline showing each section's purpose, headline, supporting copy, and CTA (if any).
-- **Framework attribution:** StoryBrand narrative arc · CRO above-the-fold conversion theory.
+  - Recruit 3-5 representative users
+  - Run interviews, capture transcripts
+  - Synthesize themes (Claude as sounding board)
+  - Write 1-2 personas or 3-5 JTBD statements
+  - Land a one-line problem statement
+### Step 2: Map the flow
+- **Goal:** Define information architecture, key journeys, navigation pattern.
+- **What happens:** Sketch primary user journeys, decide on navigation pattern (tab bar, side menu, modal stack), map IA at screen level.
+- **Default tools:** FigJam (or Miro).
+- **Default time:** 2-3 days standard · 1 day quick · 4-5 days full launch.
+- **Deliverable:** Flow map showing key screens, connections, navigation pattern.
+- **Framework attribution:** Define phase of Double Diamond · HIG: Navigation principles.
 - **Sub-tasks:**
-  - Outline sections in narrative order (StoryBrand arc)
-  - Write headlines for every section first (they're the spine)
-  - Draft supporting copy
-  - Place CTAs deliberately (every section should know whether it has one)
-  - Pressure-test against "would the ICP keep scrolling?"
-### Step 3: Design the visual story
-- **Goal:** Visual design — layout, typography, imagery, brand voice.
-- **What happens:** Design the page in Figma. Hero first, then below the fold. Source or commission imagery. Apply brand voice consistently.
-- **Default tools:** Figma, Framer (if Framer is the build target), Claude (copy refinement).
-- **Default time:** 5-8 days standard · 3-4 days quick · 8-12 days full launch.
-- **Deliverable:** A complete designed page (desktop + mobile) ready to build.
-- **Framework attribution:** CRO visual hierarchy principles · StoryBrand visual storytelling.
+  - Sketch 3-5 most important user journeys
+  - Choose navigation pattern aligned with HIG conventions
+  - Map every screen and its parent in the IA
+  - Identify shared components across journeys
+  - Walkthrough with team or stakeholder
+### Step 3: Design the screens
+- **Goal:** Visual design of all key screens with components and copy.
+- **What happens:** Build UI in Figma — components, layouts, type, color, microcopy. Use v0/AI for starter layouts; refine in Figma. Use Claude for copy.
+- **Default tools:** Figma, v0, Claude.
+- **Default time:** 5-10 days standard · 3-4 days quick · 10-15 days full launch.
+- **Deliverable:** Complete set of designed screens for core journeys, with reusable components.
+- **Framework attribution:** Develop phase of Double Diamond · HIG: Layout, Color, Typography, Materials.
 - **Sub-tasks:**
-  - Design the hero section first (it carries the conversion)
-  - Design every section below the fold
-  - Source or generate imagery
-  - Build mobile layouts (treat as primary, not adaptation)
-  - Internal critique with focus on conversion path
-### Step 4: Wire up + test conversion
-- **Goal:** Build it, instrument it, run conversion experiments.
-- **What happens:** Build in Framer (or hand off to engineering). Set up analytics, heatmaps, and at least one A/B test on the hero or primary CTA.
-- **Default tools:** Framer (build), Cursor + Claude (custom build), Hotjar (heatmaps), Posthog (analytics).
-- **Default time:** 4-7 days standard · 2-3 days quick · 7-10 days full launch.
-- **Deliverable:** Live page with analytics + heatmaps + first A/B test running.
-- **Framework attribution:** CRO testing methodology.
+  - Build or adopt a component library
+  - Design every screen in the core journeys
+  - Write all copy (headers, body, CTAs, errors, empty states)
+  - Apply HIG-conformant patterns (gestures, modals, sheets)
+  - Pressure-test accessibility (contrast, touch targets, type sizes)
+### Step 4: Prototype motion
+- **Goal:** Bring the design to life with native-feeling interactions and transitions.
+- **What happens:** Prototype most important interactions — onboarding, key gesture flows, transitions between screens.
+- **Default tools:** Origami Studio (native iOS), Rive (embeddable motion).
+- **Default time:** 3-7 days standard · skip in quick · 5-10 days full launch.
+- **Deliverable:** Interactive prototype demonstrating 3-5 key interaction moments.
+- **Framework attribution:** Develop phase of Double Diamond · HIG: Motion.
 - **Sub-tasks:**
-  - Build the page (Framer or hand off)
-  - Set up analytics for the conversion goal
-  - Add heatmaps and session recordings
-  - Define and launch the first A/B test (usually on the hero)
-  - Document the testing roadmap (what to test next)
-### Step 5: Launch + iterate
-- **Goal:** Ship it, measure, iterate weekly.
-- **What happens:** Public launch. Weekly review of conversion data. Run the next A/B tests. Update content based on what's working.
-- **Default tools:** Framer / CMS (updates), Claude (copy iteration), Posthog (data).
-- **Default time:** Launch + 2 weeks of iteration.
-- **Deliverable:** Live page with at least 2 iterations shipped based on data.
-- **Framework attribution:** CRO continuous optimization.
+  - Identify the 3-5 motion moments that most affect feel
+  - Prototype each (Origami for native, Rive for portable)
+  - User-test the prototype on a real device
+  - Document timing, easing, gestures for handoff
+  - Refine based on feedback
+### Step 5: Code-ready handoff
+- **Goal:** Hand off to engineering (or build it yourself) with everything needed to ship.
+- **What happens:** Use Figma Dev Mode or pair-coding (Cursor + Claude) to translate designs into shipping code. Document edge cases, generate specs.
+- **Default tools:** Cursor, Claude, Expo (or Figma Dev Mode for native handoff).
+- **Default time:** 2-4 days for handoff prep · 1 day quick · 4-7 days full launch.
+- **Deliverable:** Spec sheet + code snippets + working stub for the most critical screen.
+- **Framework attribution:** Deliver phase of Double Diamond · HIG: Accessibility, Inclusion.
 - **Sub-tasks:**
-  - Launch publicly
-  - Set up a weekly conversion review
-  - Run the next A/B test
-  - Update copy based on what's converting
-  - Plan v2 based on aggregate data
+  - Annotate edge cases (empty, error, loading, offline)
+  - Generate component specs from Figma
+  - Pair with Cursor + Claude on the trickiest screens
+  - Document expected accessibility behavior
+  - Ship a working stub of the highest-risk flow
 ## Adjustments by project shape
  
-**Quick exploration (3-4 steps):** Skip step 4 (formal A/B testing) for v0. Just ship and watch raw conversion. Compress step 1 to a couple hours of strategy work.
+**Quick exploration (3-4 steps):** Skip step 4 (motion). Compress step 1 to a half-day of secondary research + 1-2 informal user chats. Rush 2 → 3 → 5 to get a working v0 in front of users fast.
  
 **Standard build (5 steps):** Use the sequence as-is.
  
-**Full production launch (6-7 steps):** Add "SEO + technical foundations" before step 4 (page speed, schema, OG tags). Add "Paid traffic landing page variants" after step 5 if running ads.
+**Full production launch (6-7 steps):** Insert "Test with real users" between steps 4 and 5 (Maze, UserTesting, or in-person). After step 5, add "Ship-day prep + post-launch iteration" — analytics, crash monitoring, feedback loops.
  
 ## Hybrid project notes
  
-For a **product launch landing page** (single high-stakes moment), compress to 3 steps: define + design + launch. Skip iteration in favor of pre-launch testing.
+For an **AI mobile app**, blend with `frameworks/ai-product.md`. Insert "Define the human-AI relationship" between steps 1 and 2, and add an explicit "Design for uncertain output" sub-step in step 3.
  
-For a **content marketing site** with many pages (blog, resources), use this framework for templates and treat individual articles as production work outside this skill.
+For a **mobile + web companion**, treat as two parallel project flows sharing steps 1, 2 (with platform-specific sub-flows), and 5.
  
 ## Reading list seeds
  
 **Primary:**
-- CXL on Conversion Optimization — https://cxl.com/conversion-optimization/
-- StoryBrand BrandScript — https://storybrand.com/
+- Apple Human Interface Guidelines — https://developer.apple.com/design/human-interface-guidelines
+- Double Diamond (Design Council) — https://www.designcouncil.org.uk/our-resources/the-double-diamond
 **Adjacent:**
-- "Made to Stick" (Heath brothers) for sticky messaging
-- "Don't Make Me Think" (Steve Krug) for clarity testing
-- Marketing Examples newsletter — https://marketingexamples.com
+- Material Design 3 (Android) — https://m3.material.io
+- Mobbin (real app patterns to study) — https://mobbin.com
 **Key concepts:**
-- The above-the-fold conversion test
-- StoryBrand 7-part narrative arc
-- Hypothesis-driven A/B testing
-- The "would they keep scrolling?" question
+- Native vs. cross-platform tradeoffs
+- Touch target sizing (44pt iOS / 48dp Android)
+- Modal vs. inline navigation
