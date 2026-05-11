@@ -1,4 +1,4 @@
-# 🧭 Design Roadmap Architect
+# Design Roadmap Architect
 
 AI-fluent design project roadmaps for product designers, anchored in established frameworks and biased toward surfacing specialist tools the designer doesn't know yet.
 
