@@ -1,5 +1,8 @@
 
 ---
+name: ux-patterns-for-ai
+description: Recommend UX patterns for AI features. Use this skill when the user is designing, scoping, reviewing, or critiquing an AI-powered feature — chat interfaces, AI assistants, generative tools, AI-augmented forms, agents, or any feature where an LLM produces or transforms content for a user. Trigger on phrases like "designing an AI feature," "AI assistant," "chat UX," "should this stream," "how do we show citations," "AI feature review," "I'm working on an AI [thing]," or whenever the user is making decisions about how an AI feature should behave on screen. Trigger even if the user doesn't say "pattern" — the goal is to surface AI-specific design considerations they may have missed. Also trigger when reviewing a design spec, mockup, or PR description for an AI feature.
+---
  
 # UX Patterns for AI
  
